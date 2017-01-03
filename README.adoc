@@ -56,8 +56,21 @@ Correspond au https://bugs.openjdk.java.net/browse/JDK-8043364[projet Kulla], ma
 
 === Immutable collection factories
 
-Merci Guava !
+Parmi les nombreux reproches faits à Java, son côté super verbeux revient souvent.
+On souffre le martyre pour une simple instanciation d'une collection de String :
+Voici un exemple :
 
+[source,java]
+----
+Set<String> set = new HashSet<>();
+set.add("a");
+set.add("b");
+set.add("c");
+set = Collections.unmodifiableSet(set);
+----
+Une collection aussi triviale devait s'instancier en une ligne de code !
+
+Il a fallu attendre Java 9 pour cela (avec une forte inspiration de Guava) :
 [source,java]
 ----
 /* Comment sections would break ... */
@@ -75,6 +88,11 @@ Map<String, String> moreMapOfString =
         Map.entry("key1", "value3")*/
 );
 ----
+Pour résumer, on peut déclarer une collection, *non modifiable*, dans laquelle on peut initialiser quelques élements.
+ATTENTION :
+
+* on ne peut pas utiliser `null` comme élément
+
 
 === HTML5 Javadoc
 
