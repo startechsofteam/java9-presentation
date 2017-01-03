@@ -56,7 +56,7 @@ Correspond au https://bugs.openjdk.java.net/browse/JDK-8043364[projet Kulla], ma
 
 === Immutable collection factories
 
-Parmi les nombreuses reproches qu'on fait à Java, c'est qu'il est super verbeux.
+Parmi les nombreux reproches faits à Java, son côté super verbeux revient souvent.
 Pour une simple instanciation d'une collection de string, on souffre le martyr ! 
 Voici un exemple :
 
@@ -68,8 +68,8 @@ set.add("b");
 set.add("c");
 set = Collections.unmodifiableSet(set);
 ----
-C'est pénible ! Une collection aussi triviale devait s'instancier en une ligne de code !.
-Merci Guava ! Il a fallu attendre Java 9 pour avoir çà :
+C'est pénible ! Une collection aussi triviale devait s'instancier en une ligne de code !
+Il a fallu attendre Java 9 pour avoir cela (forte inspiration de Guava) :
 [source,java]
 ----
 /* Comment sections would break ... */
@@ -87,8 +87,9 @@ Map<String, String> moreMapOfString =
         Map.entry("key1", "value3")*/
 );
 ----
-Pour résumer on peut déclarer une collection inmodifiable, dans laquelle on peut initialiser quelques élements.
+Pour résumer on peut déclarer une collection non modifiable, dans laquelle on peut initialiser quelques élements.
 ATTENTION :
+
 * Le nombre d'élement à initialiser est limité ( je ne sais pas quel est nombre max )
 * On ne peut pas initialiser par des NULL ( après j'admets que c'est assez tordu comme besoin)
 
