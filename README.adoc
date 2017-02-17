@@ -85,14 +85,14 @@ Devient le garbage collector par défaut
 === Autres améliorations
 Stephen Colebourne, le papa de Joda Time, a annoncé de nouvelles améliorations du Java Tile dans Java SE9.
 
-1- Ajout de méthodes ocalDate.datesUntil et  LocalDate.datesUntil(LocalDate,Period) renvoyant des streams de dates.
-2- Plus de précision dans la Clock.systemUTC().
-3- Ajout d'une méthode getDateTimeMillis 
-4- Ajout de méthodes de calcul de "Duration" en date, heure, sec etc...
-5- Méthode pour trunquer une duration Duration.truncatedTo(TemporalUnit)
-6- Méthode pour diviser une duration  Duration.dividedBy(Duration).
-7- Nouvelle Factory pour simplifier la conversion de Instant à LocalTime et LocalDate
-8- Ajout d'une méthode de conversion toEpochSecond
+. Ajout de méthodes ocalDate.datesUntil et  LocalDate.datesUntil(LocalDate,Period) renvoyant des streams de dates.
+. Plus de précision dans la Clock.systemUTC().
+. Ajout d'une méthode getDateTimeMillis 
+. Ajout de méthodes de calcul de "Duration" en date, heure, sec etc...
+. Méthode pour trunquer une duration Duration.truncatedTo(TemporalUnit)
+. Méthode pour diviser une duration  Duration.dividedBy(Duration).
+. Nouvelle Factory pour simplifier la conversion de Instant à LocalTime et LocalDate
+. Ajout d'une méthode de conversion toEpochSecond
 Source : http://blog.joda.org/2017/02/java-time-jsr-310-enhancements-java-9.html
 
 == Ressources
