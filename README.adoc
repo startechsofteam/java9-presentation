@@ -93,6 +93,8 @@ Stephen Colebourne, le papa de Joda Time, a annoncé de nouvelles améliorations
 . Méthode pour diviser une duration  Duration.dividedBy(Duration).
 . Nouvelle Factory pour simplifier la conversion de Instant à LocalTime et LocalDate
 . Ajout d'une méthode de conversion toEpochSecond
+
+
 Source : http://blog.joda.org/2017/02/java-time-jsr-310-enhancements-java-9.html
 
 == Ressources
