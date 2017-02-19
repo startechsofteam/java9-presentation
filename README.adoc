@@ -83,7 +83,7 @@ Map<String, String> moreMapOfString =
 Devient le garbage collector par défaut
 
 === Autres améliorations
-Stephen Colebourne, le papa de Joda Time, a annoncé de nouvelles améliorations du Java Tile dans Java SE9.
+Stephen Colebourne, le papa de Joda Time, a annoncé de nouvelles améliorations du Java Time dans Java SE9.
 
 . Ajout de méthodes LocalDate.datesUntil et  LocalDate.datesUntil(LocalDate,Period) renvoyant des streams de dates.
 . Plus de précision dans la Clock.systemUTC().
