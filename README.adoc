@@ -54,6 +54,11 @@ h.destroy();
 
 Correspond au https://bugs.openjdk.java.net/browse/JDK-8043364[projet Kulla], maintenant connu comme *JShell*.
 
+L'API et l'outil Java Shell fourniront un moyen d'évaluer de manière interactive les déclarations, les instructions et les expressions du langage de programmation Java dans l'état JShell. 
+L'état JShell comprend un code évolutif et un état d'exécution. 
+Pour faciliter l'investigation et le codage rapides, les énoncés et les expressions ne doivent pas apparaître dans une méthode, les expressions n'ont pas besoin d'effets secondaires, les variables ne doivent pas apparaître dans une classe et les méthodes ne doivent pas apparaître dans une classe ou une interface.
+L’outil jshell sera un outil de ligne de commande avec des fonctionnalités pour faciliter l’interaction, y compris : l’ajout de tabulation, l’ajout automatique des points-virgules, les importations et les définitions prédéfinies configurables.
+
 === Immutable collection factories
 
 Parmi les nombreux reproches faits à Java, son côté super verbeux revient souvent.
