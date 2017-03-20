@@ -54,9 +54,9 @@ h.destroy();
 
 Correspond au https://bugs.openjdk.java.net/browse/JDK-8043364[projet Kulla], maintenant connu comme *JShell*.
 
-L'outil JShell API fournira un moyen d'évaluer de manière interactive les déclarations, les instructions et les expressions du langage de programmation Java dans l'état JShell. L'état JShell comprend un code en évolution et un état d'exécution. Pour faciliter l'investigation et le codage rapides, les énoncés et les expressions ne doivent pas se produire dans une méthode, les expressions n'ont pas besoin d'effets secondaires, les variables ne doivent pas se produire dans une classe et les méthodes ne doivent pas se produire dans une classe ou une interface.
+L’API et l’outil JShell fourniront un moyen d’évaluer de manière interactive les déclarations, les instructions et les expressions du langage de programmation Java dans le JShell State. Le State JShell comprend un code évolutif et un Executin State. Pour faciliter l’investigation et le codage rapides, les Statements et les expressions ne doivent pas apparaître dans une méthode, les expressions n’ont pas besoin d’effets secondaires, les variables ne doivent pas apparaître dans une classe et les méthodes ne doivent pas apparaître dans une classe ou une interface.
 
-L'outil jshell sera un outil de ligne de commande avec des fonctionnalités pour faciliter l'interaction, notamment: un historique avec l'édition, la complétion des onglets, l'ajout automatique des points-virgules terminaux nécessaires et des importations et définitions prédéfinis configurables.
+L’outil jshell sera un outil de command-line avec des features pour faciliter l’interaction, y compris : historique de l'édition, tab-completion, l’ajout automatique des points-virgules du terminal et configurabilité prédéfinie des imports et définitions.
 
 Source : http://openjdk.java.net/jeps/222
 
@@ -113,9 +113,10 @@ Source :
 
 Devient le garbage collector par défaut.
 
-Limiter les temps de pause du GC est, en général, plus important que de maximiser le débit. La commutation vers un collecteur à faible pause tel que G1 devrait fournir une meilleure expérience globale, pour la plupart des utilisateurs, qu'un collecteur orienté débit, tel que le Parallel GC, qui est actuellement la valeur par défaut.
+Limiter GC pause times est, en général, plus important que de maximiser le throughput. Le Switch vers un collector à low-pause tel que G1 devrait fournir une meilleure expérience globale, pour la plupart des utilisateurs, qu’un collector orienté throughput, tel que le Parallel GC, qui est actuellement la valeur par défaut.
 
-De nombreuses améliorations de performance ont été apportées à G1 dans JDK 8 et à ses mises à jour, et d'autres améliorations sont prévues pour JDK 9. L'introduction du déchargement de classe simultanée http://openjdk.java.net/jeps/156[(JEP 156)] dans JDK 8u40 a fait G1 un garbage collector plein de fonctionnalités, prêt à être le défaut.
+De nombreuses améliorations de performance ont été apportées à G1 dans JDK 8 et à ses update releases, et d’autres améliorations sont prévues pour JDK 9. L’introduction du cconcurrent class unloading http://openjdk.java.net/jeps/156[(JEP 156)] dans JDK 8u40 a fait G1 un fully-featured garbage collector, prêt à être le par défaut.
+
 
 Source : http://openjdk.java.net/jeps/248
 
